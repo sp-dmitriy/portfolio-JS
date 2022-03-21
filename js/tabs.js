@@ -3,6 +3,8 @@ const tabDescriptions = document.querySelectorAll('.design__descr')
 const tabImages = document.querySelectorAll('.design-images')
 const tabFeature = document.querySelectorAll('.feature__img')
 
+document.title = document.querySelector('.design-list__item.design-list__item_active').textContent
+
 tabButtons.forEach((tab) => {
   tab.addEventListener('click', (event) => {
     const dataValue = tab.dataset.tabsHandler
